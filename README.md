@@ -26,4 +26,4 @@
 
 *Важно*: в некоторых лекциях (HTTP, SSE + WS), предполагается наличие серверной части. Для таких лекций внутри каталога идёт деление на frontend/backend. Это значит, что `npm install` нужно делать и для frontend'а и для backend'а.
 
-![CI](https://github.com/sergei-yudin/JS.Working_environment/actions/workflows/web.yml/badge.svg)
+
