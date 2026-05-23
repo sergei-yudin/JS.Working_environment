@@ -1,3 +1,27 @@
 body {
     color: #999;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+.board {
+  width: 400px;
+  height: 400px;
+  margin: 30px auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  gap: 8px;
+}
+
+.cell {
+  border: 2px solid #333;
+  background: #eee;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.goblin {
+  width: 80px;
+  height: 80px;
 }
