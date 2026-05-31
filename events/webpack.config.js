@@ -10,10 +10,13 @@ module.exports = {
     path: path.resolve(__dirname, 'dist'),
   },
   devServer: {
-    historyApiFallback: true,
-    contentBase: path.resolve(__dirname, '/dist'),
+
+    static: './dist',
+
+    hot: true,
+
     open: true,
-    compress: true,
+
   },
   module: {
     rules: [
@@ -37,6 +40,10 @@ module.exports = {
         use: [
           MiniCssExtractPlugin.loader, 'css-loader',
         ],
+      },
+      {
+        test: /\.(png|svg|jpg|jpeg|gif)$/i,
+        type: 'asset/resource',
       },
     ],
   },
