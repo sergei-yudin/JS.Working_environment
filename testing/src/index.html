@@ -9,14 +9,40 @@
 </head>
 
 <body>
-    <!-- TODO: comment after component added -->
-    <form data-widget="innogrn-form-widget">
-        <div class="form-control">
-            <label for="innorgn-input">Введите ИНН/ОГРН</label>
-            <input id="innorgn-input" data-id="innogrn-input" type="text">
-        </div>
-        <button data-id="innogrn-submit">Далее</button>
-    </form>
+    <main class="page">
+        <section class="card-validator" data-widget="card-validator">
+            <h1 class="card-validator__title">Credit Card Validator</h1>
+
+          <div class="card-validator__systems" data-id="card-systems">
+            <img class="card-system card-system_visa" data-system="visa" src="./img/icons8-виза-50.png" alt="Visa">
+            <img class="card-system card-system_mastercard" data-system="mastercard" src="./img/mastercard_payment_method_icon_142750.png" alt="Mastercard">
+            <img class="card-system card-system_mir" data-system="mir" src="./img/icons8-мир-50.png" alt="Мир">
+            <img class="card-system card-system_jcb" data-system="jcb" src="./img/icons8-jcb-50.png" alt="JCB">
+            <img class="card-system card-system_diners" data-system="diners" src="./img/icons8-diners-club-50.png" alt="Diners Club">
+            <img class="card-system card-system_discover" data-system="discover" src="./img/icons8-discover-50.png" alt="Discover">
+            <img class="card-system card-system_amex" data-system="amex" src="./img/icons8-амекс-50.png" alt="American Express">
+          </div>
+
+            <form class="card-validator__form" data-id="card-form">
+                <label class="card-validator__label" for="card-input">Введите номер карты</label>
+                <div class="card-validator__control">
+                    <input
+                        class="card-validator__input"
+                        id="card-input"
+                        data-id="card-input"
+                        type="text"
+                        inputmode="numeric"
+                        autocomplete="cc-number"
+                        placeholder="4111111111111111"
+                    >
+                    <button class="card-validator__button" data-id="card-submit" type="submit">
+                        Validate
+                    </button>
+                </div>
+                <div class="card-validator__result" data-id="card-result"></div>
+            </form>
+        </section>
+    </main>
 </body>
 
 </html>
