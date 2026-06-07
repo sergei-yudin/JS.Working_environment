@@ -8,6 +8,7 @@ module.exports = {
   devtool: 'inline-source-map',
   output: {
     path: path.resolve(__dirname, 'dist'),
+    publicPath: '/JS.Working_environment/',
   },
   devServer: {
 
